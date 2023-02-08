@@ -23,7 +23,7 @@ nav {
 
 }
 
-.site-nav-list ul {
+.site-navigation ul {
     float: right;
     margin: auto 0;
     line-height: 5rem;
@@ -63,12 +63,12 @@ ul li::before {
     width: 60%;
     max-width: 1200px;
     height: 50rem;
-    margin: 5rem auto 3rem;    
+    margin: 5rem auto 3rem;  
 }
 
 .main-info .about-me-text {
     display: inline-block;
-    margin: 10rem 3rem;
+    margin: 10rem 5rem;
 }
 
 .about-me-text h1 {
@@ -118,7 +118,7 @@ ul li::before {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 1.25rem 3rem;
+    margin: 1.25rem 10rem;
     width: 80%;
     white-space: nowrap;
     line-height: 1.1;
@@ -150,6 +150,7 @@ ul li::before {
     column-gap: 2rem;
     width: 80%;
     height: 30rem;
+    margin: 0 auto;
 }
 
 .about-grid-item {
