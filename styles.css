@@ -23,14 +23,14 @@ nav {
 
 }
 
-.site-navigation ul {
+.site-nav-list ul {
     float: right;
     margin: auto 0;
     line-height: 5rem;
 
 }
 
-.menu-links li {
+li {
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
