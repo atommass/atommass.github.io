@@ -1,0 +1,9 @@
+Granite Gray - #666666
+Sonic Silver - #777777
+Taupe Gray - #888888
+Spanish Gray - #989898
+X11 Dark Gray - #A9A9A9
+X11 Gray - #BABABA
+
+Pop color:
+Cerise Pink - #EC2781
