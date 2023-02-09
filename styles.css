@@ -254,14 +254,14 @@ ul li::before {
   }
   .tabs .tab-header {
     float: left;
-    width: 180px;
+    width: 15rem;
     height: 100%;
     border-right: 1px solid #ccc;
     padding: 50px 0px;
   }
   .tabs .tab-header > div {
-    height: 50px;
-    line-height: 50px;
+    height: 3.25rem;
+    line-height: 3.25rem;
     font-size: 16px;
     font-weight: 600;
     color: #888888;
@@ -272,15 +272,25 @@ ul li::before {
   .tabs .tab-header > div.active {
     color: #EC2781;
   }
-  .tabs .tab-header div i {
-    display:inline-block;
-    margin-left:10px;
-    margin-right:5px;
-  }
+  /* .tabs .tab-header div i {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+  } */
   .tabs .tab-content {
-    position:relative;
-    height:100%;
-    overflow:hidden;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .work-time {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 0.825rem;
+    font-style: italic;
+  }
+
+  .job-description {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
   }
   /* .tabs .tab-content > div > i {
     display:inline-block;
@@ -295,24 +305,24 @@ ul li::before {
     border-radius:50%;
   } */
   .tabs .tab-content > div {
-    position:absolute;
-    text-align:center;
-    padding:40px 20px;
-    top:-200%;
-    transition:all 500ms ease-in-out;
+    position: absolute;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    top: -200%;
+    transition: all 500ms ease-in-out;
   }
   .tabs .tab-content > div.active {
-    top:0px;
+    top: 0px;
   }
   
   .tabs .tab-indicator {
-    position:absolute;
-    width:4px;
-    height:50px;
+    position: absolute;
+    width: 4px;
+    height: 50px;
     background: #EC2781;
-    left:198px;
-    top:80px;
-    transition:all 500ms ease-in-out;
+    left: 16.125rem;
+    top: 130px;
+    transition: all 500ms ease-in-out;
   }
 /* END OF STYLED LIST */
 
