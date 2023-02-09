@@ -7,3 +7,6 @@ X11 Gray - #BABABA
 
 Pop color:
 Cerise Pink - #EC2781
+
+
+#199EBD
