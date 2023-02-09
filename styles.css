@@ -14,6 +14,7 @@ header {
     box-shadow: 0px 5px 100px 30px #F69CC5;
     background-color: #FFFFFF;
     opacity: 0.9;
+    z-index: 3;
 }
 
 nav {
@@ -35,14 +36,15 @@ li {
     text-decoration: none;
     display: inline-block;
     margin: auto 1rem;
-    
 }
 
 .menu-links {
     text-decoration: none;
     color: #666666;
     transition: 350ms ease-in-out;
+    line-height: 3;
 }
+
 
 .menu-links:hover {
     font-weight: bolder;
@@ -60,7 +62,7 @@ ul li::before {
 
 /* ---> MAIN PAGE <--- */
 .main-info {
-    width: 60%;
+    width: 80%;
     max-width: 1200px;
     height: 50rem;
     margin: 5rem auto 3rem;  
@@ -68,7 +70,7 @@ ul li::before {
 
 .main-info .about-me-text {
     display: inline-block;
-    margin: 10rem 5rem;
+    margin: 8rem 5rem;
 }
 
 .about-me-text h1 {
@@ -80,6 +82,10 @@ ul li::before {
 .about-me-text p {
     font-size: 1.125rem;
     margin: 2rem 0;
+}
+
+#about-me-info {
+    color: #666666;
 }
 
 #my-name-is {
@@ -97,17 +103,21 @@ ul li::before {
     background-color: none;
     color: #EC2781;
     font-weight: bold;
+    box-shadow: 5px 5px 10px #EC2781;
     transition: 350ms ease-in-out;
 }
 
 .contact-button:hover {
     background-color: #FCE2EE;
+    position: relative;
+    bottom: -2px;
+    box-shadow: none;
     transition: 350ms ease-in-out;
 }
 
 /* ---> ABOUT PAGE <--- */
 .about {
-    width: 60%;
+    width: 80%;
     max-width: 1200px;
     height: 40rem;
     margin: 5rem auto 3rem;
@@ -118,7 +128,7 @@ ul li::before {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 1.25rem 10rem;
+    margin: 10rem 10rem 1.25rem;
     width: 80%;
     white-space: nowrap;
     line-height: 1.1;
@@ -132,6 +142,8 @@ ul li::before {
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #EC2781;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin-right: 0.5rem;
 }
 
 .numbered-heading::after {
@@ -175,10 +187,138 @@ ul li::before {
     border-radius: 1rem;
     transform: rotate(5deg);
     box-shadow: 5px 5px 10px #EC2781;
+    transition: 350ms ease-in-out;
 }
 
 .about-image-box:hover {
     box-shadow: none;
     position: relative;
     bottom: -4px;
+    transition: 350ms ease-in-out;
+}
+
+.experience {
+    width: 80%;
+    max-width: 1200px;
+    height: 50rem;
+    margin: 7rem auto 3rem;
+}
+
+.numbered-heading-2 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10rem 10rem 1.25rem;
+    width: 80%;
+    white-space: nowrap;
+    line-height: 1.1;
+    color: #666666;
+}
+
+.numbered-heading-2 h2 {
+    display: block;
+}
+
+.numbered-heading-2::before {
+    position: relative;
+    counter-increment: section 2;
+    bottom:-2px;
+    content: "0" counter(section) ".";
+    font-size: 1.25rem;
+    color: #EC2781;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin-right: 0.5rem;
+}
+
+.numbered-heading-2::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 2px;
+    margin-left: 20px;
+    background-color: #EC2781;
+}
+/* START OF STYLED LIST */
+.tabs {
+    position: relative;
+    margin: 1rem auto;
+    left: -5rem;
+    width: 42.5rem;
+    height: 22.5rem;
+    padding: 1.875rem 1.25rem;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 10px 5px #777777;
+    overflow: hidden;
+  }
+  .tabs .tab-header {
+    float: left;
+    width: 180px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    padding: 50px 0px;
+  }
+  .tabs .tab-header > div {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888888;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color: #EC2781;
+  }
+  .tabs .tab-header div i {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+  }
+  .tabs .tab-content {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+  }
+  /* .tabs .tab-content > div > i {
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:#FFFFFF;
+    color:#f5f5f5;
+    font-size:25px;
+    font-weight:600;
+    text-align:center;
+    line-height:50px;
+    border-radius:50%;
+  } */
+  .tabs .tab-content > div {
+    position:absolute;
+    text-align:center;
+    padding:40px 20px;
+    top:-200%;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top:0px;
+  }
+  
+  .tabs .tab-indicator {
+    position:absolute;
+    width:4px;
+    height:50px;
+    background: #EC2781;
+    left:198px;
+    top:80px;
+    transition:all 500ms ease-in-out;
+  }
+/* END OF STYLED LIST */
+
+.work {
+    width: 80%;
+    max-width: 1200px;
+    height: 40rem;
+    margin: 5rem auto 3rem;
 }
