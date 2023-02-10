@@ -1,3 +1,8 @@
+//SCROLL TO TOP
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
 // START OF STYLED LIST
 function _class(name){
     return document.getElementsByClassName(name);
@@ -19,3 +24,31 @@ function _class(name){
   }
 
 //   END OF STYLED LIST
+
+// SMOOTH SCROLL
+function scrollFunction1() {
+  let e = document.getElementById("about");
+  e.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+    inline: 'start'
+  });
+}
+function scrollFunction2() {
+  let e = document.getElementById("experience");
+  // This ends the block to the window 
+  // bottom and also aligns the view to the center 
+  e.scrollIntoView({
+    block: 'end',
+    behavior: 'smooth',
+    inline: 'center'
+  });
+}
+function scrollFunction3() {
+  let e = document.getElementById("work");
+  e.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+    inline: 'start'
+  });
+}

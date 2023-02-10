@@ -11,10 +11,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 100px 30px #3DC6E5;
+    box-shadow: 0px 5px 100px 30px #1E2761;
     background-color: #FFFFFF;
     opacity: 0.9;
-    z-index: 3;
+    z-index: 4;
 }
 
 nav {
@@ -48,7 +48,7 @@ li {
 
 .menu-links:hover {
     font-weight: bolder;
-    color: #199EBD;
+    color: #1E2761;
     transition: 350ms ease-in-out;
     
 }
@@ -57,7 +57,72 @@ ul li::before {
     content: attr(data-icon);
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: bold;
-    color: #199EBD;
+    color: #1E2761;
+}
+
+.social-links{
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 5rem;
+    height: 100%; 
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+.social-link-icons {
+    display: block;
+    margin: 0 auto 0;
+    padding: 0;
+
+}
+
+.social-link-icons::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 2px;
+    height: 10rem;
+    margin: 1rem auto;
+    background-color: #666666;
+}
+
+.social-icons {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    color: #666666;
+}
+
+.social-icons a {
+    color: #666666;
+}
+
+.email {
+    position: fixed;
+    top: 5rem;
+    right: 0;
+    width: 5rem;
+    height: 100%; 
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.email p {
+    transform: rotate(90deg);
+    padding-left: 2.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 2px;
+}
+
+.email a::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 2px;
+    height: 10rem;
+    margin: 1rem auto;
+    background-color: #666666;
 }
 
 /* ---> MAIN PAGE <--- */
@@ -89,26 +154,26 @@ ul li::before {
 }
 
 #my-name-is {
-    color: #199EBD;
+    color: #1E2761;
     font-weight: bold;
 }
 
 .contact-button {
-    border: 2px solid #199EBD;
+    border: 2px solid #1E2761;
     border-radius: 5px;
     padding: 0.75rem 2rem;
     display: inline-block;
     font-family: 'Space Mono', sans-serif;
     text-decoration: none;
     background-color: none;
-    color: #199EBD;
+    color: #1E2761;
     font-weight: bold;
-    box-shadow: 5px 5px 10px #199EBD;
+    box-shadow: 5px 5px 10px #1E2761;
     transition: 350ms ease-in-out;
 }
 
 .contact-button:hover {
-    background-color: #199EBD;
+    background-color: #1E2761;
     color: #FFFFFF;
     position: relative;
     bottom: -2px;
@@ -121,7 +186,7 @@ ul li::before {
     width: 80%;
     max-width: 1200px;
     height: 40rem;
-    margin: 5rem auto 3rem;
+    margin: 5rem auto 15rem;
 }
 
 .numbered-heading{
@@ -142,7 +207,7 @@ ul li::before {
     bottom:-2px;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
-    color: #199EBD;
+    color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
 }
@@ -154,7 +219,7 @@ ul li::before {
     width: 250px;
     height: 2px;
     margin-left: 20px;
-    background-color: #199EBD;
+    background-color: #1E2761;
 }
 
 .about-grid {
@@ -179,15 +244,15 @@ ul li::before {
 }
 
 .about-image-box {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     margin: 1.5rem auto;
     background-image: url('./prof_pic.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1rem;
     transform: rotate(5deg);
-    box-shadow: 5px 5px 10px #199EBD;
+    box-shadow: 5px 5px 10px #1E2761;
     transition: 350ms ease-in-out;
 }
 
@@ -202,7 +267,7 @@ ul li::before {
     width: 80%;
     max-width: 1200px;
     height: 50rem;
-    margin: 7rem auto 3rem;
+    margin: 5rem auto 3rem;
 }
 
 .numbered-heading-2 {
@@ -210,7 +275,7 @@ ul li::before {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10rem 10rem 1.25rem;
+    margin: 5rem 10rem 1.25rem;
     width: 80%;
     white-space: nowrap;
     line-height: 1.1;
@@ -227,7 +292,7 @@ ul li::before {
     bottom:-2px;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
-    color: #199EBD;
+    color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
 }
@@ -239,7 +304,7 @@ ul li::before {
     width: 250px;
     height: 2px;
     margin-left: 20px;
-    background-color: #199EBD;
+    background-color: #1E2761;
 }
 /* START OF STYLED LIST */
 .tabs {
@@ -271,7 +336,7 @@ ul li::before {
   }
   .tabs .tab-header > div:hover,
   .tabs .tab-header > div.active {
-    color: #199EBD;
+    color: #1E2761;
   }
   /* .tabs .tab-header div i {
     display: inline-block;
@@ -320,7 +385,7 @@ ul li::before {
     position: absolute;
     width: 4px;
     height: 50px;
-    background: #199EBD;
+    background: #1E2761;
     left: 16.125rem;
     top: 130px;
     transition: all 500ms ease-in-out;
@@ -356,7 +421,7 @@ ul li::before {
     bottom:-2px;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
-    color: #199EBD;
+    color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
 }
@@ -368,5 +433,9 @@ ul li::before {
     width: 250px;
     height: 2px;
     margin-left: 20px;
-    background-color: #199EBD;
+    background-color: #1E2761;
+}
+
+.work p {
+    margin-left: 10rem;
 }
