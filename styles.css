@@ -100,11 +100,11 @@ ul li::before {
 }
 
 .social-icons a:hover {
-    color: #1E2761;
+    color: #0F0;
     top: -2px;
     transition: all 500ms ease-in-out;
     position: relative;
-    text-shadow: 0px 0px 20px #1E2761;
+    /* text-shadow: 0px 0px 20px #1E2761; */
 }
 
 .email {
@@ -131,11 +131,11 @@ ul li::before {
 }
 
 .email a:hover {
-    color: #1E2761;
+    color: #0F0;
     top: -2px;
     transition: all 500ms ease-in-out;
     position: relative;
-    text-shadow: 0px 0px 20px #1E2761;
+    /* text-shadow: 0px 0px 20px #1E2761; */
 }
 
 .email a::before {
@@ -467,9 +467,8 @@ ul li::before {
 .education {
     width: 80%;
     max-width: 1200px;
-    height: 50rem;
-    margin: 5rem auto 3rem;
-    border: 1px solid red;
+    height: 60rem;
+    margin: 3rem auto 3rem;
 }
 
 .numbered-heading-4 {
@@ -477,7 +476,7 @@ ul li::before {
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10rem 10rem 1.25rem;
+    margin: 10rem 10rem 0rem;
     width: 80%;
     white-space: nowrap;
     line-height: 1.1;
@@ -508,6 +507,86 @@ ul li::before {
     margin-left: 20px;
     background-color: #1E2761;
 }
+
+/* TIMELINE START */
+.timeline{
+    display: block;
+    width: 800px;
+    color:#666666;
+    padding: 30px 20px;
+    margin: 0 auto 0 10rem;
+  }
+  .timeline ul{
+    list-style-type: none;
+    padding: 10px 5px;
+  }
+  .timeline ul li{
+    width: 100%;
+    padding: 0px 20px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0 0 2rem;
+  }
+  .timeline ul li span{
+    display: inline-block;
+    background-color: #1E2761;
+    color: #FFFFFF;
+    border-radius: 25px;
+    padding: 2px 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .timeline ul li .content h3{
+    color: #1E2761;
+    font-size: 17px;
+    padding-top: 5px;
+  }
+  .timeline ul li .content p{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 15px;
+  }
+
+  .content::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 2px;
+    height: 75%;
+    left: -7px;
+    top: 2.5rem;
+    background-color: #1E2761;
+  }
+
+  .timeline ul li:before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #1E2761;
+    border-radius: 50%;
+    left: -11px;
+    top: 8px;
+    transition: .5s;
+  }
+
+  .timeline ul li:hover:before{
+    background-color:#0F0;
+    box-shadow:0px 0px 10px 2px #0F0;
+  }
+  @media (max-width:300px){
+    .timeline{
+      width:100%;
+      padding:30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3{
+      color:#1E2761;
+      font-size:15px;
+    }
+  
+  }
+/* TIMELINE END */
+
 
 
 .contact {
