@@ -52,3 +52,40 @@ function scrollFunction3() {
     inline: 'start'
   });
 }
+function scrollFunction4() {
+  let e = document.getElementById("education");
+  e.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+    inline: 'start'
+  });
+}
+function scrollFunction5() {
+  let e = document.getElementById("contact");
+  e.scrollIntoView({
+    block: 'start',
+    behavior: 'smooth',
+    inline: 'start'
+  });
+}
+
+// TIME CONTAINER
+
+const timeContainer = document.getElementById("time-container");
+
+var startDate = new Date("Sep 1, 2022 00:00:00").getTime();
+
+var timer = setInterval(function(){
+  
+  var now = new Date().getTime();
+  var difference = now - startDate;
+
+  var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  timeContainer.innerHTML = days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds";
+
+}, 1000);
+

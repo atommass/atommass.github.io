@@ -26,7 +26,7 @@
                     <li data-icon="01. "><a class="menu-links" onclick="scrollFunction1()">About</a></li>
                     <li data-icon="02. "><a class="menu-links" onclick="scrollFunction2()">Experience</a></li>
                     <li data-icon="03. "><a class="menu-links" onclick="scrollFunction3()">Projects</a></li>
-                    <li data-icon="04. "><a class="menu-links" onclick="scrollFunction4()">Skills</a></li>
+                    <li data-icon="04. "><a class="menu-links" onclick="scrollFunction4()">Education</a></li>
                     <li data-icon="05. "><a class="menu-links" onclick="scrollFunction5()">Contact</a></li>
                 </ul>
             </nav>
@@ -41,7 +41,7 @@
 
         </div>
         <div class="email">
-            <a><p>elgars.ab@gmail.com</p></a>
+            <a onclick="scrollFunction5()"><p>elgars.ab@gmail.com</p></a>
         </div>
         <div class="main-info">
             <div class="about-me-text">
@@ -58,7 +58,7 @@
                     I'm almost Full-Stack engineer and a Computer <br>Science student at <a>Transport and Telecommunications<br> institute</a> located in Riga, Latvia. 
                 </p>
                     
-                <a class="contact-button" href="#contact">Contact Me</a>
+                <a class="contact-button" onclick="scrollFunction5()">Contact Me</a>
             </div>
         </div>
 
@@ -71,7 +71,14 @@
             <div class="about-grid">
                 <div class="about-grid-item">
                     <p>
-                        Hey hey! It's me - Elgars. I am here to put your stuff all around the world wide web. It is quite funny to think that my interest in web design started before:<br> (insert js Y/M/DAY H/MIN/SEC counter). <br><br> Before that I was a coffee industry expert and barista. And I have now found my inner calling to work in IT. <br><br> Right now I have experience with:
+                        Hey hey! It's me - Elgars. I am here to put your stuff all around the world wide web. It is quite funny to think that my interest in web design started before:
+                    </p>
+                    <br>
+                        <span id="time-container">0</span>
+                        <br>
+                        <br> 
+                    <p>
+                            Before that I was a coffee industry expert and barista. And I have now found my inner calling to work in IT. <br><br> Right now I have experience with:
                     </p>
                     <ul>
                         <li data-icon="👉" class="about-list">JavaScript (ES6+)</li>
@@ -167,8 +174,11 @@
                 Nothing impressive to show... Yet.. :D
             </p>
         </div>
-        <div class="skills" id="skills">
-
+        <div class="education" id="education">
+            <br>
+            <h2 class="numbered-heading-4">
+                Education
+            </h2>
         </div>
         <div class="contact" id="contact">
 
