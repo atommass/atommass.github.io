@@ -39,7 +39,7 @@ function scrollFunction2() {
   // This ends the block to the window 
   // bottom and also aligns the view to the center 
   e.scrollIntoView({
-    block: 'end',
+    block: 'center',
     behavior: 'smooth',
     inline: 'center'
   });
@@ -47,7 +47,7 @@ function scrollFunction2() {
 function scrollFunction3() {
   let e = document.getElementById("work");
   e.scrollIntoView({
-    block: 'start',
+    block: 'center',
     behavior: 'smooth',
     inline: 'start'
   });
@@ -55,13 +55,22 @@ function scrollFunction3() {
 function scrollFunction4() {
   let e = document.getElementById("education");
   e.scrollIntoView({
-    block: 'start',
+    block: 'center',
     behavior: 'smooth',
     inline: 'start'
   });
 }
 function scrollFunction5() {
   let e = document.getElementById("contact");
+  e.scrollIntoView({
+    block: 'center',
+    behavior: 'smooth',
+    inline: 'nearest'
+  });
+}
+
+function scrollFunction6() {
+  let e = document.getElementById("main-info");
   e.scrollIntoView({
     block: 'start',
     behavior: 'smooth',
@@ -98,10 +107,11 @@ function showContactForm() {
   contactForm.style.display = 'block';
   contactForm.style.visibility = 'visible';
   contactForm.style.transition = 'optical';
+  scrollFunction5();
 }
 
 function hideContactForm() {
   contactForm.style.display = 'none';
   contactForm.style.visibility = 'hidden';
-  contactForm.style.transition = 'optical';
+  scrollFunction6();
 }

@@ -237,7 +237,6 @@ ul li::before {
     top: 3rem;
     padding-top: 3rem;
     margin: 3rem auto 3rem;
-    transition: all 500ms ease-in-out;
 }
 
 .numbered-heading-5 {
