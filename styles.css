@@ -13,8 +13,7 @@ header {
     left: 0;
     box-shadow: 0rem 0.3125rem 6.25rem 1.875rem #1E2761;
     background-color: #FFFFFF;
-    opacity: 0.9;
-    z-index: 4;
+    z-index: 5;
 }
 
 nav {
@@ -25,7 +24,7 @@ nav {
 }
 
 .site-navigation ul {
-    float: right;
+    float: left;
     margin: auto 0;
     line-height: 5rem;
 
@@ -61,28 +60,54 @@ ul li::before {
     color: #1E2761;
 }
 
-.social-links{
+/* .site-nav-list::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -0.25rem;
+    width: 50rem;
+    height: 0.125rem;
+    margin: 1rem auto 0;
+    background-color: #666666;
+    overflow: hidden;
+} */
+
+.social-links {
     position: fixed;
-    top: 5rem;
-    left: 0;
+    top: 0;
+    right: 0;
     width: 5rem;
     height: 100%; 
     background-color: #FFFFFF;
-    z-index: 5;
-}
-.social-link-icons {
-    display: block;
-    margin: 0 auto 0;
-    padding: 0;
+    z-index: -1;
 }
 
-.social-link-icons::before {
+.social-link-icons {
+    position: fixed;
+    margin: 2.5rem auto 0;
+    padding: 0;
+    bottom: 0;
+    right: 2.5rem;
+    z-index: 10;
+}
+
+/* .social-link-icons::before {
     content: "";
     display: block;
     position: relative;
     width: 0.125rem;
-    height: 10rem;
-    margin: 1rem auto;
+    height: 40rem;
+    margin: 2.5rem auto 1rem;
+    background-color: #666666;
+} */
+
+.social-link-icons::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0.125rem;
+    height: 15rem;
+    margin: 1rem auto 0;
     background-color: #666666;
 }
 
@@ -110,11 +135,11 @@ ul li::before {
 .email {
     position: fixed;
     top: 5rem;
-    right: 0;
+    left: 0;
     width: 5rem;
     height: 100%; 
     background-color: #FFFFFF;
-    z-index: 5;
+    z-index: -1;
 }
 
 .email p {
@@ -152,7 +177,7 @@ ul li::before {
 .main-info {
     width: 80%;
     max-width: 75rem;
-    height: 50rem;
+    height: 30rem;
     margin: 5rem auto 3rem;  
 }
 
@@ -205,12 +230,134 @@ ul li::before {
     transition: 350ms ease-in-out;
 }
 
+.contact {
+    width: 80%;
+    max-width: 75rem;
+    height: 32rem;
+    top: 3rem;
+    padding-top: 3rem;
+    margin: 3rem auto 3rem;
+    transition: all 500ms ease-in-out;
+}
+
+.numbered-heading-5 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 1rem 5rem 0rem;
+    width: 80%;
+    white-space: nowrap;
+    line-height: 1.1;
+    color: #666666;
+}
+
+.numbered-heading-5 h2 {
+    display: inline;
+}
+
+/* .numbered-heading-5::before {
+    position: relative;
+    counter-increment: section 5;
+    bottom:-0.125rem;
+    content: "0" counter(section) ".";
+    font-size: 1rem;
+    color: #1E2761;
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin-right: 0.5rem;
+} */
+
+.numbered-heading-5::after {
+    content: "";
+    display: inline;
+    position: relative;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
+    background-color: #1E2761;
+}
+#form-close-button {
+    display: inline;
+    color: #666666;
+    position: relative;
+    font-size: 2rem;
+    float: right;
+    margin-right: 16rem;
+    cursor: pointer;
+    transition: all 350ms ease-in-out;
+}
+
+#form-close-button:hover {
+    color: #0F0;
+    text-shadow: 0rem 0rem 0.625rem #0F0;
+    transition: all 350ms ease-in-out;
+}
+
+.contact-form {
+    display: block;
+    margin: 3rem 4rem 3rem;
+}
+
+.label-text {
+    margin-left: 1rem;
+    
+}
+
+.text-input {
+    display: block;
+    width: 80%;
+    margin: 0.5rem 1rem 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    border: 0.125rem solid #1E2761;
+    transition: 350ms ease-in-out;
+}
+
+.text-input:focus {
+    box-shadow: 0rem 0rem 1.25rem #0F0;
+    transition: 350ms ease-in-out;
+}
+
+
+#contact-email {
+    display: block;
+    width: 30%;
+    margin-left: 1rem;
+}
+
+#message-content {
+    height: 10rem;
+}
+
+.submit {
+    display: block;
+    width: 10rem;
+    height: 3rem;
+    margin: 3rem auto;
+    border: 0.125rem solid #1E2761;
+    border-radius: 0.3125rem;
+    background-color: #FFFFFF;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #1E2761;
+    font-family: 'Space Mono', Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1E2761;
+    transition: 350ms ease-in-out;
+}
+
+.submit:hover {
+    position: relative;
+    box-shadow: none;
+    background-color: #1E2761;
+    color: #FFFFFF;
+    bottom: -0.25rem;
+    transition: 350ms ease-in-out;
+    cursor: pointer;
+}
 /* ---> ABOUT PAGE <--- */
 .about {
     width: 80%;
     max-width: 75rem;
     height: 40rem;
-    margin: 5rem auto 15rem;
+    margin: 15rem auto 15rem;
 }
 
 .numbered-heading{
@@ -230,7 +377,7 @@ ul li::before {
     counter-increment: section 1;
     bottom:-0.125rem;
     content: "0" counter(section) ".";
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
@@ -315,7 +462,7 @@ ul li::before {
     counter-increment: section 2;
     bottom:-0.125rem;
     content: "0" counter(section) ".";
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
@@ -334,8 +481,7 @@ ul li::before {
 .tabs {
     position: relative;
     margin: 1rem auto;
-    left: -5rem;
-    width: 42.5rem;
+    width: 60rem;
     height: 22.5rem;
     padding: 1.875rem 1.25rem;
     background: #f5f5f5;
@@ -444,7 +590,7 @@ ul li::before {
     counter-increment: section 3;
     bottom:-0.125rem;
     content: "0" counter(section) ".";
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
@@ -492,7 +638,7 @@ ul li::before {
     counter-increment: section 4;
     bottom:-0.125rem;
     content: "0" counter(section) ".";
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #1E2761;
     font-family: 'Hanken Grotesk', sans-serif;
     margin-right: 0.5rem;
@@ -586,106 +732,21 @@ ul li::before {
   
   }
 /* TIMELINE END */
-.contact {
-    width: 80%;
-    max-width: 75rem;
-    height: 50rem;
-    margin: 5rem auto 3rem;
-    border: 0.0625rem solid #FFFFFF;
-}
-
-.numbered-heading-5 {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-    margin: 10rem 10rem 0rem;
-    width: 80%;
-    white-space: nowrap;
-    line-height: 1.1;
-    color: #666666;
-}
-
-.numbered-heading-5 h2 {
-    display: block;
-}
-
-.numbered-heading-5::before {
-    position: relative;
-    counter-increment: section 5;
-    bottom:-0.125rem;
-    content: "0" counter(section) ".";
-    font-size: 1.25rem;
-    color: #1E2761;
-    font-family: 'Hanken Grotesk', sans-serif;
-    margin-right: 0.5rem;
-}
-
-.numbered-heading-5::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 15.625rem;
-    height: 0.125rem;
-    margin-left: 1.25rem;
-    background-color: #1E2761;
-}
-
-.contact-form {
-    display: block;
-    margin: 3rem 4rem 3rem;
-}
-
-.label-text {
-    margin-left: 10%;
-    
-}
-
-.text-input {
-    display: block;
-    width: 80%;
-    margin: 0.5rem auto 1rem;
-    font-family: 'Hanken Grotesk', sans-serif;
-    border: 0.125rem solid #1E2761;
-    transition: 350ms ease-in-out;
-}
-
-.text-input:focus {
-    box-shadow: 0rem 0rem 1.25rem #0F0;
-    transition: 350ms ease-in-out;
-}
 
 
-#contact-email {
-    display: block;
-    width: 30%;
-    margin-left: 10%;
-}
+@media only screen and (max-width: 1282px) {
+    * {font-size: 14px;}
 
-#message-content {
-    height: 10rem;
-}
+    .numbered-heading, .numbered-heading-2, .numbered-heading-3, .numbered-heading-4, .numbered-heading-5 {
+        font-size: 1.25rem;
+    }
 
-.submit {
-    display: block;
-    width: 20rem;
-    height: 3rem;
-    margin: 3rem auto;
-    border: 0.125rem solid #1E2761;
-    border-radius: 0.3125rem;
-    background-color: #FFFFFF;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem #1E2761;
-    font-family: 'Space Mono', Helvetica, sans-serif;
-    font-weight: bold;
-    color: #1E2761;
-    transition: 350ms ease-in-out;
-}
+    .numbered-heading-2::before, .numbered-heading::before, .numbered-heading-3::before, .numbered-heading-4::before, .numbered-heading-5::before {
+        bottom: -0.0652rem;
+    }
 
-.submit:hover {
-    position: relative;
-    box-shadow: none;
-    background-color: #1E2761;
-    color: #FFFFFF;
-    bottom: -0.25rem;
-    transition: 350ms ease-in-out;
+    .social-icons {
+        font-size: 1.625rem;
+    }
+
 }

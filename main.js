@@ -89,3 +89,19 @@ var timer = setInterval(function(){
 
 }, 1000);
 
+// CONTACT FORM
+const contactForm = document.getElementById("contact");
+contactForm.style.display = 'none';
+contactForm.style.visibility = 'hidden';
+
+function showContactForm() {
+  contactForm.style.display = 'block';
+  contactForm.style.visibility = 'visible';
+  contactForm.style.transition = 'optical';
+}
+
+function hideContactForm() {
+  contactForm.style.display = 'none';
+  contactForm.style.visibility = 'hidden';
+  contactForm.style.transition = 'optical';
+}
