@@ -11,7 +11,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 5px 100px 30px #1E2761;
+    box-shadow: 0rem 0.3125rem 6.25rem 1.875rem #1E2761;
     background-color: #FFFFFF;
     opacity: 0.9;
     z-index: 4;
@@ -80,7 +80,7 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 2px;
+    width: 0.125rem;
     height: 10rem;
     margin: 1rem auto;
     background-color: #666666;
@@ -101,10 +101,10 @@ ul li::before {
 
 .social-icons a:hover {
     color: #0F0;
-    top: -2px;
+    top: -0.125rem;
     transition: all 500ms ease-in-out;
     position: relative;
-    text-shadow: 0px 0px 20px #0F0;
+    text-shadow: 0rem 0rem 1.25rem #0F0;
 }
 
 .email {
@@ -121,7 +121,7 @@ ul li::before {
     transform: rotate(90deg);
     padding-left: 2.5rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 .email a {
@@ -132,17 +132,17 @@ ul li::before {
 
 .email a:hover {
     color: #0F0;
-    top: -2px;
+    top: -0.125rem;
     transition: all 500ms ease-in-out;
     position: relative;
-    text-shadow: 0px 0px 20px #0F0;
+    text-shadow: 0rem 0rem 1.25rem #0F0;
 }
 
 .email a::before {
     content: "";
     display: block;
     position: relative;
-    width: 2px;
+    width: 0.125rem;
     height: 10rem;
     margin: 1rem auto;
     background-color: #666666;
@@ -151,7 +151,7 @@ ul li::before {
 /* ---> MAIN PAGE <--- */
 .main-info {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 50rem;
     margin: 5rem auto 3rem;  
 }
@@ -182,8 +182,8 @@ ul li::before {
 }
 
 .contact-button {
-    border: 2px solid #1E2761;
-    border-radius: 5px;
+    border: 0.125rem solid #1E2761;
+    border-radius: 0.3125rem;
     padding: 0.75rem 2rem;
     display: inline-block;
     font-family: 'Space Mono', sans-serif;
@@ -191,7 +191,7 @@ ul li::before {
     background-color: none;
     color: #1E2761;
     font-weight: bold;
-    box-shadow: 5px 5px 10px #1E2761;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #1E2761;
     transition: 350ms ease-in-out;
     cursor: pointer;
 }
@@ -200,7 +200,7 @@ ul li::before {
     background-color: #1E2761;
     color: #FFFFFF;
     position: relative;
-    bottom: -2px;
+    bottom: -0.125rem;
     box-shadow: none;
     transition: 350ms ease-in-out;
 }
@@ -208,7 +208,7 @@ ul li::before {
 /* ---> ABOUT PAGE <--- */
 .about {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 40rem;
     margin: 5rem auto 15rem;
 }
@@ -228,7 +228,7 @@ ul li::before {
 .numbered-heading::before{
     position: relative;
     counter-increment: section 1;
-    bottom:-2px;
+    bottom:-0.125rem;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #1E2761;
@@ -240,9 +240,9 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 250px;
-    height: 2px;
-    margin-left: 20px;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
     background-color: #1E2761;
 }
 
@@ -276,20 +276,20 @@ ul li::before {
     background-repeat: no-repeat;
     border-radius: 1rem;
     transform: rotate(5deg);
-    box-shadow: 5px 5px 10px #1E2761;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #1E2761;
     transition: 350ms ease-in-out;
 }
 
 .about-image-box:hover {
     box-shadow: none;
     position: relative;
-    bottom: -4px;
+    bottom: -0.25rem;
     transition: 350ms ease-in-out;
 }
 
 .experience {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 50rem;
     margin: 5rem auto 3rem;
 }
@@ -313,7 +313,7 @@ ul li::before {
 .numbered-heading-2::before {
     position: relative;
     counter-increment: section 2;
-    bottom:-2px;
+    bottom:-0.125rem;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #1E2761;
@@ -325,9 +325,9 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 250px;
-    height: 2px;
-    margin-left: 20px;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
     background-color: #1E2761;
 }
 /* START OF STYLED LIST */
@@ -339,24 +339,24 @@ ul li::before {
     height: 22.5rem;
     padding: 1.875rem 1.25rem;
     background: #f5f5f5;
-    box-shadow: 5px 5px 10px 5px #777777;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem 0.3125rem #777777;
     overflow: hidden;
   }
   .tabs .tab-header {
     float: left;
     width: 15rem;
     height: 100%;
-    border-right: 1px solid #ccc;
-    padding: 50px 0px;
+    border-right: 0.0625rem solid #ccc;
+    padding: 3.125rem 0rem;
   }
   .tabs .tab-header > div {
     height: 3.25rem;
     line-height: 3.25rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: #888888;
     cursor: pointer;
-    padding-left: 10px;
+    padding-left: 0.625rem;
   }
   .tabs .tab-header > div:hover,
   .tabs .tab-header > div.active {
@@ -402,23 +402,23 @@ ul li::before {
     transition: all 500ms ease-in-out;
   }
   .tabs .tab-content > div.active {
-    top: 0px;
+    top: 0rem;
   }
   
   .tabs .tab-indicator {
     position: absolute;
-    width: 4px;
-    height: 50px;
+    width: 0.25rem;
+    height: 3.125rem;
     background: #1E2761;
     left: 16.125rem;
-    top: 130px;
+    top: 8.125rem;
     transition: all 500ms ease-in-out;
   }
 /* END OF STYLED LIST */
 
 .work {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 50rem;
     margin: 5rem auto 3rem;
 }
@@ -442,7 +442,7 @@ ul li::before {
 .numbered-heading-3::before {
     position: relative;
     counter-increment: section 3;
-    bottom:-2px;
+    bottom:-0.125rem;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #1E2761;
@@ -454,9 +454,9 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 250px;
-    height: 2px;
-    margin-left: 20px;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
     background-color: #1E2761;
 }
 
@@ -466,7 +466,7 @@ ul li::before {
 
 .education {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 60rem;
     margin: 3rem auto 3rem;
 }
@@ -490,7 +490,7 @@ ul li::before {
 .numbered-heading-4::before {
     position: relative;
     counter-increment: section 4;
-    bottom:-2px;
+    bottom:-0.125rem;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #1E2761;
@@ -502,27 +502,27 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 250px;
-    height: 2px;
-    margin-left: 20px;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
     background-color: #1E2761;
 }
 
 /* TIMELINE START */
 .timeline{
     display: block;
-    width: 800px;
+    width: 50rem;
     color:#666666;
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     margin: 0 auto 0 10rem;
   }
   .timeline ul{
     list-style-type: none;
-    padding: 10px 5px;
+    padding: 0.625rem 0.3125rem;
   }
   .timeline ul li{
     width: 100%;
-    padding: 0px 20px;
+    padding: 0rem 1.25rem;
     position: relative;
     cursor: pointer;
     transition: .5s;
@@ -532,28 +532,28 @@ ul li::before {
     display: inline-block;
     background-color: #1E2761;
     color: #FFFFFF;
-    border-radius: 25px;
-    padding: 2px 5px;
-    font-size: 15px;
+    border-radius: 1.5625rem;
+    padding: 0.125rem 0.3125rem;
+    font-size: 0.9375rem;
     text-align: center;
   }
   .timeline ul li .content h3{
     color: #1E2761;
-    font-size: 17px;
-    padding-top: 5px;
+    font-size: 1.0625rem;
+    padding-top: 0.3125rem;
   }
   .timeline ul li .content p{
     font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
   .content::before {
     content: "";
     display: inline-block;
     position: absolute;
-    width: 2px;
+    width: 0.125rem;
     height: 75%;
-    left: -7px;
+    left: -0.4375rem;
     top: 2.5rem;
     background-color: #1E2761;
   }
@@ -561,37 +561,37 @@ ul li::before {
   .timeline ul li:before{
     position: absolute;
     content: '';
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     background-color: #1E2761;
     border-radius: 50%;
-    left: -11px;
-    top: 8px;
+    left: -0.6875rem;
+    top: 0.5rem;
     transition: .5s;
   }
 
   .timeline ul li:hover:before{
     background-color:#0F0;
-    box-shadow:0px 0px 10px 2px #0F0;
+    box-shadow: 0rem 0rem 0.625rem 0.125rem #0F0;
   }
-  @media (max-width:300px){
+  @media (max-width: 300px){
     .timeline{
-      width:100%;
-      padding:30px 5px 30px 10px;
+      width: 100%;
+      padding: 1.875rem 0.3125rem 1.875rem 0.625rem;
     }
     .timeline ul li .content h3{
       color:#1E2761;
-      font-size:15px;
+      font-size: 0.9375rem;
     }
   
   }
 /* TIMELINE END */
 .contact {
     width: 80%;
-    max-width: 1200px;
+    max-width: 75rem;
     height: 50rem;
     margin: 5rem auto 3rem;
-    border: 1px solid #FFFFFF;
+    border: 0.0625rem solid #FFFFFF;
 }
 
 .numbered-heading-5 {
@@ -613,7 +613,7 @@ ul li::before {
 .numbered-heading-5::before {
     position: relative;
     counter-increment: section 5;
-    bottom:-2px;
+    bottom:-0.125rem;
     content: "0" counter(section) ".";
     font-size: 1.25rem;
     color: #1E2761;
@@ -625,9 +625,9 @@ ul li::before {
     content: "";
     display: block;
     position: relative;
-    width: 250px;
-    height: 2px;
-    margin-left: 20px;
+    width: 15.625rem;
+    height: 0.125rem;
+    margin-left: 1.25rem;
     background-color: #1E2761;
 }
 
@@ -646,12 +646,12 @@ ul li::before {
     width: 80%;
     margin: 0.5rem auto 1rem;
     font-family: 'Hanken Grotesk', sans-serif;
-    border: 2px solid #1E2761;
+    border: 0.125rem solid #1E2761;
     transition: 350ms ease-in-out;
 }
 
 .text-input:focus {
-    box-shadow: 0px 0px 20px #0F0;
+    box-shadow: 0rem 0rem 1.25rem #0F0;
     transition: 350ms ease-in-out;
 }
 
@@ -671,10 +671,13 @@ ul li::before {
     width: 20rem;
     height: 3rem;
     margin: 3rem auto;
-    border: 2px solid #1E2761;
+    border: 0.125rem solid #1E2761;
+    border-radius: 0.3125rem;
     background-color: #FFFFFF;
-    box-shadow: 5px 5px 10px #1E2761;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #1E2761;
     font-family: 'Space Mono', Helvetica, sans-serif;
+    font-weight: bold;
+    color: #1E2761;
     transition: 350ms ease-in-out;
 }
 
@@ -683,6 +686,6 @@ ul li::before {
     box-shadow: none;
     background-color: #1E2761;
     color: #FFFFFF;
-    bottom: -4px;
+    bottom: -0.25rem;
     transition: 350ms ease-in-out;
 }
