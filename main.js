@@ -15,7 +15,7 @@ function _class(name){
       _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
       tabPanes[i].classList.add("active");
       
-      _class("tab-indicator")[0].style.top = `calc(80px + ${i*50}px)`;
+      _class("tab-indicator")[0].style.top = `calc(5rem + ${i*3.125}rem)`;
       
       _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
       _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");

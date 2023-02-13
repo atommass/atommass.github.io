@@ -677,5 +677,158 @@ ul li::before {
     html {
         font-size: 12px;
     }
+
+    .submit {
+        font-size: 1rem;
+    }
 }
 
+@media only screen and (max-width: 961px) {
+    html {
+        font-size: 11px;
+    }
+    .tabs {
+        width: 50rem;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    html {
+        font-size: 10px;
+    }
+
+    .numbered-heading, .numbered-heading-2, .numbered-heading-3, .numbered-heading-4, .numbered-heading-5 {
+        margin-left: 5rem;
+    }
+
+    .contact {
+        font-size: 0.825rem;
+    }
+
+    #form-close-button {
+        font-size: 1.5rem;
+        margin-right: 10rem;
+
+    }
+    .contact-heading {
+        margin-top: 2rem;
+    }
+
+    #contact-email {
+        width: 50%;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template: 2fr 1fr / 100%;
+        row-gap: 2rem;
+        width: 80%;
+        height: 40rem;
+        margin: 0 0 3rem 3rem;
+    }
+
+    .about-image-box {
+        width: 20rem;
+        height: 20rem;
+
+    }
+
+    .experience {
+        margin-top: 10rem;
+    }
+
+    .tabs {
+        width: 50rem;
+    }
+    .work p {
+        margin-left: 5rem;
+    }
+
+    .education {
+        width: 80%;
+    }
+
+    .timeline {
+        margin-left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .numbered-heading, .numbered-heading-2, .numbered-heading-3, .numbered-heading-4, .numbered-heading-5 {
+        margin-left: 5rem;
+    }
+    .tabs {
+        width: 40rem;
+        height: 35rem;
+    }
+
+    .timeline {
+        width: 45rem;
+    }
+
+    .contact {
+        font-size: 0.825rem;
+    }
+
+    #form-close-button {
+        font-size: 1.5rem;
+        margin-right: 10rem;
+
+    }
+    .contact-heading {
+        margin-top: 3rem;
+    }
+
+    #contact-email {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    html {
+        font-size: 8px;
+    }
+
+    .contact {
+        font-size: 0.825rem;
+    }
+
+    #form-close-button {
+        font-size: 1.5rem;
+        margin-right: 10rem;
+
+    }
+    .contact-heading {
+        margin-top: 2rem;
+    }
+
+    #contact-email {
+        width: 50%;
+    }
+
+    .numbered-heading, .numbered-heading-2, .numbered-heading-3, .numbered-heading-4, .numbered-heading-5 {
+        margin-left: 5rem;
+    }
+
+    .about-image-box {
+        width: 15rem;
+        height: 15rem;
+
+    }
+    
+    .work p {
+        margin-left: 5rem;
+    }
+
+    .tabs {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .timeline {
+        width: 40rem;
+    }
+
+
+}
